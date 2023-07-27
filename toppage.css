@@ -1,0 +1,330 @@
+body{
+    margin: 0;
+    }
+    
+    ul,
+    li {
+      list-style: none;
+    }
+
+    #header {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+    
+    #header-img {
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      background-image: url("img/top_header.jpg");
+      transform-origin: center;
+      background-size: cover;
+      width: 100%;
+      height: 100vh;
+    }
+    
+    #main{
+      position: relative;
+      background: linear-gradient(#ffbe74,#7a7eff);
+      z-index: 2;
+      margin-top: 50px;
+    }
+    .text {
+     font-family: 'Mr Dafoe', cursive;
+     font-size: xx-large;
+     color: #ff0000;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     font-size: 50px;
+    }
+
+    /* Facility */
+    .box{
+     text-align: center;
+     margin-top: 10rem;
+    }
+
+    .container{
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 300px 300px;
+      gap:50px;
+      
+      align-items: center;
+    }
+    .img{
+      width: 100%;
+      height:10rem;
+      max-width:500px;
+      border-radius: 35px;
+    }
+
+    .container p {
+      font-family: sans-serif;
+      font-weight: bold;
+    }
+
+    .detail-button{
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      }
+
+    .facility{
+      background: transparent;
+      border-radius: 35px;
+      padding: 25px;
+      font-weight: bold;
+      position: relative;
+      display: inline-block;
+      outline: none;
+      transition: all 0.2s ease;
+      }
+
+      .facility :hover{
+        border-color: transparent;
+      }
+
+    .facility a{
+      text-decoration: none;
+      color: #000;
+    }  
+    
+    .facility span{
+      position: relative;
+      z-index: 2;
+      display: block;
+      background: #fff;
+      transition: all 0.3s ease;
+    }
+
+    .container img{
+      transition: 1s all;
+    }
+
+    .container img:hover{
+      transform: scale(1.2,1.2);
+      transition: 1s all;
+    }
+
+    .push::before {
+      content:"";
+      position: absolute;
+      z-index: -1;
+      top:4px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #333;
+    }
+
+    .push :hover span{
+      background-color: #333;
+      color: #fff;
+      transform: translateY(4px);
+    }
+    /* food */
+    .food{
+      background: linear-gradient(to top, #f5d39a,#fd740a);
+      border-radius: 35px;
+      padding: 25px;
+      font-weight: bold;
+    }
+
+    .food a{
+      text-decoration: none;
+      color: #000;
+    }
+    /* view */
+    .view{
+      background: linear-gradient(to top, #b3dcff,#0048ff);
+      border-radius: 35px;
+      padding: 25px;
+      font-weight: bold;
+    }
+
+    .view a{
+      text-decoration: none;
+      color: #000;
+    }
+    /* schedule */
+    .schedule{
+      background: linear-gradient(to top, #ffb3b3,#ff0000);
+      border-radius: 35px;
+      padding: 25px;
+      font-weight: bold;
+    }
+
+    .schedule a{
+      text-decoration: none;
+      color: #000;
+    }
+
+    /* reserve */
+    .box-2{
+      text-align: center;
+      margin-top: 10rem;
+    }
+
+    .reserve-img{
+      width: 100%;
+      margin: 0 auto;
+      max-width:100%;
+      max-height: 500px;
+      border-radius: 35px;
+    }
+
+    .container-2 {
+      position: relative;
+      padding: 0 200px;
+    }
+    
+    .plan {
+      position: absolute;
+      top: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff;
+    }
+    
+    .phone {
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      padding: 60px 60px;
+      background-color: #ffbb46;
+    }
+    
+    .mail {
+      position: absolute;
+      top: 50%;
+      left:60%;
+      transform: translate(-50%, -50%);
+      padding: 60px 60px;
+      background-color: #f26a6a;
+
+    }
+    
+    .phone a,
+    .mail a {
+      color: #fff;
+      font-family: serif;
+      font-weight: bold;
+      font-size: 15px;
+      text-decoration: none;
+    }
+    @media screen and (max-width: 768px) {
+      .box-2{
+        text-align: center;
+        margin-top: 10rem;
+      }
+  
+      .reserve-img{
+        width: 100%;
+        margin: 0 auto;
+        max-width:100%;
+        max-height: 500px;
+        border-radius: 35px;
+      }
+  
+      .container-2 {
+        position: relative;
+        padding: 0 200px;
+      }
+      
+      .plan {
+        position: absolute;
+        top: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+      }
+      
+      .phone {
+        position: absolute;
+        top: 70%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        padding: 10px 10px;
+        background-color: #ffbb46;
+      }
+      
+      .mail {
+        position: absolute;
+        top: 70%;
+        left:60%;
+        transform: translate(-50%, -50%);
+        padding: 10px 10px;
+        background-color: #f26a6a;
+  
+      }
+      
+      }
+  
+    /* news */
+    .news-menu{
+      display: flex;
+      justify-content: center;
+     }
+
+     .news-container-1{
+       display: flex;
+       margin: 20px;
+     }
+     .news-container-1 img{
+      display: inline-block;
+       width: 200px;
+       max-width:500px;
+       padding:20px;
+       border-radius: 35px;
+     }
+ 
+     .news-container-1 p {
+      font-family: sans-serif;
+      width: 200px;
+      align-items: center;
+      font-weight: bold;
+     }
+
+     .news-menu{
+      display: flex;
+      justify-content: center;
+     }
+     /* footer */
+     footer {
+      background-color: #6591ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 15em;
+    }
+    
+    .logo {
+      font-family: 'Mr Dafoe', cursive;
+      font-size: 70px;
+    }
+    
+    .footer-menu {
+      display: flex;
+      margin-left: 100px;
+    }
+    
+    .footer-menu a {
+      padding: 20px;
+      font-size: x-large;
+      color: #000;
+      text-decoration: none;
+    }
+    
+    
+
+ 
+
+    
+   
